@@ -9263,15 +9263,15 @@ bool MainConfigurator::SortTimeWindows(){
 		}
 		for (i=0;i<j;i++){
 				
-			if (timewindows_dropdown_vector[((i+7)*3)] >= 6){
+			if (timewindows_dropdown_vector[((i+7)*3)] >= 6 && timewindows_dropdown_vector[((i+7)*3)] < 8){
 				timewindows_dropdown_vector[((i+7)*3+1)] = timewindows_dropdown_vector[((i+7)*3)];
 				timewindows_dropdown_vector[((i+7)*3+2)] = timewindows_dropdown_vector[((i+7)*3)];
 			}
-			if (timewindows_dropdown_vector[((i+7)*3+1)] >= 6){
+			if (timewindows_dropdown_vector[((i+7)*3+1)] >= 6 && timewindows_dropdown_vector[((i+7)*3+1)] < 8){
 				timewindows_dropdown_vector[((i+7)*3)] = timewindows_dropdown_vector[((i+7)*3+1)];
 				timewindows_dropdown_vector[((i+7)*3+2)] = timewindows_dropdown_vector[((i+7)*3+1)];
 			}
-			if (timewindows_dropdown_vector[((i+7)*3+2)] >= 6){
+			if (timewindows_dropdown_vector[((i+7)*3+2)] >= 6 && timewindows_dropdown_vector[((i+7)*3+2)]  < 8){
 				timewindows_dropdown_vector[((i+7)*3)] = timewindows_dropdown_vector[((i+7)*3+2)];
 				timewindows_dropdown_vector[((i+7)*3+1)] = timewindows_dropdown_vector[((i+7)*3+2)];
 			}
